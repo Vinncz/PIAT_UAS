@@ -20,7 +20,7 @@ __Composed by:__
 ## Outline
 
 ### I. Multiple Choices (20%)
-- [ ] Software Configuration Management
+- [X] Software Configuration Management
 - [ ] Version Control and Branch Management
 - [ ] CI/CD
 - [ ] Software Architecture
@@ -43,7 +43,43 @@ __Composed by:__
 
 ### Software Configuration Management
 
-Untuk meng-track riwayat
+Merupakan hal yang lu lakuin untuk menata dan mengontrol konfigurasi dari sebuah software.
+
+SCM mencakup:
+- Version Control
+
+  Helps in maintaining a history of changes, facilitates collaboration among team members, and enables reverting to previous versions if necessary.
+
+- Change Management
+
+  Provides mechanisms to track, review, approve, and implement changes in a controlled manner. This includes the ability to create change requests, assign them to appropriate individuals, and track their status throughout the change lifecycle.
+
+- Release Management
+
+  Ensures that the correct versions of software artifacts are utilized during the build and release processes.
+
+Software Configuration Management memiliki beberapa elemen:
+- Component elements:
+- Process elements:
+- Construction elements:
+- Human elements:
+
+Software Configuration Management memiliki proses sbg berikut:
+1. User sadar kalo perlu ada perubahan/perkembangan
+2. User kirim request ke developer untuk perubahan
+3. Developer evaluasi, dan membuat report ttg apa yang terjadi
+4. Change Control Authority membuat keputusan
+5. Jika tidak diterima, kasih tau pengirim request kalau ia ditolak
+6. Jika diterima, masukan request ke antrian "TODO"
+7. Untuk setiap request yang ada di antrian, pilih seseorang yang akan menyelesaikannya
+8. Check-out <configuration objects> yang appropriate sesuai dengan Request. (kalo lu pake versionning, object-object yang layak pakai akan ada versionnya sendiri dan disimpan di database. Check-out ini artinya lu ngambil object yang dipakai oleh aplikasi sekarang, untuk dimodifikasi)
+9. Buatlah perubahan yang appropriate sehingga Request terpenuhi
+10. Review (audit) perubahan yang telah lu buat.
+11. Check-in config object yang udah dimodifikasi, dan tes itu sesuai dengan ***baseline*** yang ada.
+12. Perform quality assurance dan tes lainnya
+13. Usulkan agar object yang udah lulus tes ikut pada rilis selanjutnya.
+14. Rebuild aplikasinya, dan masukkan object yang berubah kedalamnya
+15. Distribute aplikasi versi baru.
 
 ㅤ
 
