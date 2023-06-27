@@ -1,2 +1,3 @@
 # PIAT_UAS
-Made in response to looming finals
+
+This repo is a collection of notes and learning material, made in response to the looming finals.
