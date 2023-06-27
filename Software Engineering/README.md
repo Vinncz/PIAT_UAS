@@ -28,8 +28,8 @@ __Composed by:__
 - [ ] Maintenance and Reengineering
 
 ### II. Essay (30%)
-- [ ] Emerging Trends in Software Engineering
-- [ ] Security Engineering
+- [X] Emerging Trends in Software Engineering
+- [X] Security Engineering
 
 ### III. Case (50%)
 - [ ] Software Architecture
@@ -89,15 +89,63 @@ Maintenance and reengineering are **two different areas in software engineering*
 
 ### Emerging Trends in Software Engineering
 
-What the fu-
+Tiga pertanyaan pada emerging trends:
+1. Seberapa cepat teknologi bisa berkembang?
+2. Seberapa signifikan efeknya feedback?
+3. Seberapa berasa dampaknya?
+
+#### Soft Trends yang Telah Diamati
+
+1. Connectivity and Collaboration
+   Ini telah membuat proses kolaborasi saat perancangan software bisa dilakukan dari jarak jauh.
+
+2. Globalization
+   Anggota tim bisa berasal darimana saja, dengan ekspertise yang berbeda-beda. Untuk software dapat berhasil, si developer sebagai tim harus dapat berhasil dalam meng-harness potensial penuh dari tim-nya.
+
+#### Open-World Software
+
+Merupakan software yang didesign untuk terus beradaptasi dengan environment yang terus berganti.
+
+#### Open Source Software
+
+Merupakan software yang source-code nya tersedia secara public.
+
+Open Source merupakan methodology yang mengizinkan **siapa saja** untuk berkontribusi, sehingga dapat menghasilkan product yang berkualitas dan reliable (akibat expertise orang-orang)
+
+#### Technology Direction
+
+Software engineering is about people dan kebisaan mereka untuk saling mengkomunikasikan kebutuhan mereka, dan berinovasi sehingga kebutuhan mereka itu bisa terpenuhi.
+
+Setiap kali ada unsur orang, maka sudah pasti akan ada perubahan.
+
+Software engineering pada umumnya ingin perubahan untuk datang secara jarang-jarang namun periodik. Hanyalah ketika sebuah tipping point tercapai, baru mereka mau berubah.
 
 ㅤ
 
 
 ### Security Engineering
 
-What the fuck
+Kunci penting dari keamanan sebuah aplikasi adalah: **menjaga mereka yang tidak memiliki kepentingan dari mengakses sebuah informasi**.
 
+Mengantisipasi pihak luar dari mendapatkan akses atas data dinamakan ***threat analysis***.
+
+Dengan menjaga software untuk terus secure, anda telah menjaga **integrity, avaibility, reliability, dan safety dari software**.
+
+> Developer tidak mungkin untuk membuat sistem yang 100% secure, makanya buatlah backup copy dari data penting, dan siapkan system komponen yang redundant (berlebihan).
+
+Urutan flownya **secara UMUM** adalah sebagai berikut:
+1. Cari vulnerabilitas (celah) dimana pihak luar dapat mengakses informasi yang tidak-tidak
+2. Analisis caranya agar celah tersebut bisa ditambel (plan cara memperbaikinya)
+3. Eksekusikan plan yang dibuat.
+4. Jika sudah terlanjur jebol, cari cara untuk memitigasi future breach.
+
+Security Engineering memiliki 6 tahap:
+1. Identify asset" yang dimiliki software, supaya lu bisa analisa nantinya
+2. Buatlah architecture overview supaya ngerti hubungan dari software dengan asset"nya
+3. Decompose the application agar lu punya clue "dimana Risk mungkin sembunyi"
+4. Mulailah cari threat-threat yang ada.
+5. Dokumentasikan threat yang lu temuin
+6. Klasifikasi threat-nya. Yang klasifikasinya berat, lu harus selesaiin secepetnya.
 ㅤ
 
 ㅤ
