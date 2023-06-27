@@ -21,7 +21,7 @@ __Composed by:__
 
 ### I. Multiple Choices (20%)
 - [X] Software Configuration Management
-- [ ] Version Control and Branch Management
+- [X] Version Control and Branch Management
 - [ ] CI/CD
 - [ ] Software Architecture
 - [ ] Deployment
@@ -86,10 +86,34 @@ Software Configuration Management memiliki proses sbg berikut:
 
 ### Version Control and Branch Management
 
-Git/GitHub
+Version control adalah gabungan dari sesuatu yang lu lakuin, dengan alat yang membantu lu dalem menjaga riwayat dari sebuah file.
+
+Aplikasi version control yang terkenal adalah Git uuntuk lokal, dan GitHub yang di-host pada cloud.
+
+Pada aplikasi version control, ada yang namanya **Change Set**. Yang disimpan pada sebuah **Change Set** adalah semua perubahan pada file yang di-*track*
+.
+
+Ketika suatu perubahan ingin kita simpan supaya dapat dilihat kembali, aplikasi umumnya akan memberikan kemudahan untuk kita dengan menamai commit kita.
+
+Version control system terdapat 2 tipe:
+
+#### Centralized Version Control System
+
+semua perubahan perlu dikomunikasikan dengan suatu entity central yang mendata semua perubahan.
+
+Ini kaku, developer akan susah bekerja sama dengan leluasa.
+
+#### Decentralized Version Control System
+
+Ini kaya GitHub, lu clone repository ke device lu, dan lu bisa modify semua file dan commit ke repository punya lu sendiri.
+
+Ketika lu memang mau publish sebuah perubahan, lu bisa open a pull request dengan central repository.
+
+#### Branch Management
+
+Ini gw belom baca untuk yang centralized version control system. Tapi ya lu tau lah
 
 ㅤ
-
 
 ### Continuous Improvements, Continuous Development (CI/CD)
 
@@ -133,9 +157,11 @@ Tiga pertanyaan pada emerging trends:
 #### Soft Trends yang Telah Diamati
 
 1. Connectivity and Collaboration
+
    Ini telah membuat proses kolaborasi saat perancangan software bisa dilakukan dari jarak jauh.
 
 2. Globalization
+
    Anggota tim bisa berasal darimana saja, dengan ekspertise yang berbeda-beda. Untuk software dapat berhasil, si developer sebagai tim harus dapat berhasil dalam meng-harness potensial penuh dari tim-nya.
 
 #### Open-World Software
