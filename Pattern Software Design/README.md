@@ -5,10 +5,12 @@
 __Made for:__
 > _Pattern Software Design_
 > [ LEC ] -  Final Exam
+>
 > 2023 Even Semester
 
 __Composed by:__
 > 2501977941 - Kevin Gunawan
+>
 > ChatGPT (Best Boi)
 
 ㅤ
@@ -39,6 +41,9 @@ Materi UAS akan diambil dari session 08 sampai 13:
 # Pembahasan Materi
 
 Dibawah akan dibahas secara mendetail semua yang dimention sebelumnya.
+
+ㅤ
+
 
 ## Tactical Patterns
 

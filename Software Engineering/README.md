@@ -5,11 +5,14 @@
 \
 __Made for:__
 > _Software Engineering_
+>
 > [ LEC ] -  Final Exam
+>
 > 2023 Even Semester
 
 __Composed by:__
 > 2501977941 - Kevin Gunawan
+>
 > ChatGPT (Best Boi)
 
 ㅤ
@@ -30,7 +33,7 @@ __Composed by:__
 
 ### III. Case (50%)
 - [ ] Software Architecture
-- [ ] Risk Management
+- [X] Risk Management
 
 ㅤ
 
@@ -42,25 +45,43 @@ __Composed by:__
 
 Untuk meng-track riwayat
 
+ㅤ
+
+
 ### Version Control and Branch Management
 
 Git/GitHub
+
+ㅤ
+
 
 ### Continuous Improvements, Continuous Development (CI/CD)
 
 CI/CD is **a method to frequently deliver apps to customers by introducing automation into the stages of app development**. The main concepts attributed to CI/CD are continuous integration, continuous delivery, and continuous deployment.
 
+ㅤ
+
+
 ### Software Architecture
 
 Software architecture is **the set of structures needed to reason about a software system and the discipline of creating such structures and systems**. Each structure comprises software elements, relations among them, and properties of both elements and relations.
+
+ㅤ
+
 
 ### Deployment
 
 Software deployment is **the process of making software available to be used on a system by users and other programs**. You might deploy software to create a backup copy of the software, to move the software to another system, or to create another SMP/E-serviceable copy for installing service or other products.
 
+ㅤ
+
+
 ### Maintenance and Reengineering
 
 Maintenance and reengineering are **two different areas in software engineering**. Maintenance is for running the system till the age of the system where as the reengineering make the system new to work for another life span. Scope of reengineering is vast and challenging as compared to maintenance.
+
+ㅤ
+
 ㅤ
 ㅤ
 ㅤ
@@ -70,9 +91,15 @@ Maintenance and reengineering are **two different areas in software engineering*
 
 What the fu-
 
+ㅤ
+
+
 ### Security Engineering
 
 What the fuck
+
+ㅤ
+
 ㅤ
 ㅤ
 ㅤ
@@ -82,9 +109,13 @@ What the fuck
 
 What the fu-
 
+ㅤ
+
+
 ### Risk Management
 
 ![risk management paradigm](https://i.ibb.co/GJmBYQ7/Screenshot-2023-06-26-194331.jpg)
+
 Didalam sebuah risk management, semua dimulai dari:
 1. **Mengidentifikasi Risk yang ada**,
 
