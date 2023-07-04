@@ -5,11 +5,14 @@
 \
 __Made for:__
 > _Code Reengineering_
+> 
 > [ LEC ] -  Final Exam
+> 
 > 2023 Even Semester
 
 __Composed by:__
 > 2501977941 - Kevin Gunawan
+> 
 > ChatGPT (Best Boi)
 
 ㅤ
@@ -17,6 +20,8 @@ __Composed by:__
 ## Outline
 
 Materi UAS akan diambil dari session 16 sampai 26:
+
+ㅤ
 
 #### Abstraction Smells _______________
 - [x] **Missing Abstraction**
