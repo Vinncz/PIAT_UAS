@@ -20,56 +20,71 @@ Materi UAS akan diambil dari session 16 sampai 26:
 
 #### Abstraction Smells _______________
 - [x] **Missing Abstraction**
+      
    Keadaan dimana encoded strings digunakan sebagai alat yang dapat mengklasifikasi suatu object
 
 - [x] **Imperative Abstraction**
+      
    Keadaan dimana operasi didefine sebagai class
 
 - [x] **Incomplete Abstraction**
+      
    Method yang tidak dilengkapi dengan keberadaannya method lain
 
 - [x] **Multifaceted Abstraction**
+      
    Kejadian dimana suatu class memiliki banyak tanggung jawab
 
 - [x] **Unnecessary Abstraction**
+      
    Kejadian dimana sebuah _**class sudah dibuatkan, tapi class itu ga berfaedah (berbobot).**_
 
 - [x] **Unutilized Abstraction**
+      
    Kejadian dimana suatu SUBclass extends suatu SUPERclass, namun tidak OVERRIDE semua methodnya (meskipun ia BISA)
 
 - [x] **Duplicate Abstraction**
+      
    Kejadian dimana suatu SUBclass extends suatu SUPERclass – namun, ada dua atau lebih SUBclasses (plural) _**memiliki method yang sama**_ meskipun itu tidak ada di SUPERclass.
 
 ㅤ
 
 #### Encapsulation Smells ________________
 - [x] **Deficient Encapsulation**
+      
    Kejadian dimana access modifier TIDAK DIMANFAATKAN SEPENUHNYA untuk menutupi informasi
 
 - [x] **Leaky Encapsulation**
+      
    Kejadian dimana sebuah method yang HANYA BERGUNA untuk men-support FUNGSIONALITAS suatu class malah dibuat public.
 
    Smell ini juga bisa diaplikasikan kepada method yang penamaannya tidak appropriate (bisa membocorkan cara implementasi dari suatu class).
 
 - [x] **Missing Encapsulation**
+      
    Kejadian dimana access modifier TIDAK DIGUNAKAN SAMA SEKALI untuk menutupi informasi
 
 - [x] **Unexploited Encapsulation**
+      
    Jangan pakai IF-ELSE statement untuk ngecek tipe dari sebuah object. Kalo ketauan, namanya bukan enkapsulasi.
 
 ㅤ
 
 #### Modularization Smells ___________
 - [x] **Broken Modularization**
+      
    Data dan/atau method yang seharusnya menjadi bagian dari class A malah ditaro di class B
 
 - [x] **Insufficient Modularization**
+      
    Mirip long method dan large class. Tidak adanya refactor yang cukup pada suatu class/method.
 
 - [x] **Cyclically-dependent Modularization**
+      
    Kejadian dimana suatu SUPERclass yang memiliki banyak SUBclass sadar jika: SUBclasses (plural) miliknya bergantung satu sama lain. Dependency selevel.
 
 - [x] **Hub-like Modularization**
+      
    Kejadian dimana suatu class memiliki BANYAK KETERGANTUNGAN dengan class lain.
 
    TLDR: Class central diperlukan/memerlukan banyak class lain agar dia dapat berfungsi.
@@ -78,33 +93,43 @@ Materi UAS akan diambil dari session 16 sampai 26:
 
 #### Hierarchy Smells ___________
 - [x] **Missing Hierarchy**
+      
    Kejadian dimana terdapat lebih dari 1 class yang memiliki behaviour yang sama TANPA DILAKUKANNYA INHERITANCE
 
 - [x] **Unnecessay Hierarchy**
+      
    Kejadian dimana inheritance tidak diperlukan (misal suatu class hanya berbeda pada attribut saja). Untuk suatu class dapat dikatakan inherit dari suatu SUPERclas, dia itu harus berubah behaviournya.
 
 - [x] **Unfactored Hierarchy**
+      
    Jika ada duplicate code: baik itu attribute atau method, selidiki. Bisa jadi itu hierarchy yang tidak dibuat atau tidak benar. Ini namanya
 
 - [x] **Wide Hierarchy**
+      
    Kejadian dimana suatu class di-inherit oleh banyak classes.
 
 - [x] **Speculative Hierarchy**
+      
    Kejadian dimana suatu SUBclass dibuat, namun tidak dipakai
 
 - [x] **Deep Hierarchy**
+      
    Kejadian dimana SUPERclass hanya di-inherit oleh sedikit SUBclass lain, namun ada BANYAK SUB-SUBCLASS YANG INHERIT dari SUBclass
 
 - [x] **Rebellious Hierarchy**
+      
    Kalo lu inherits, artinya lu menerima SEMUA hal yang diwariskan oleh si SUPERclass. gaboleh nolak.
 
 - [x] **Broken Hierarchy**
+      
    Kejadian yang menggangu inheritance
 
 - [x] **Multipath Hierarchy**
+      
    Kejadian dimana suatu SUB-SUBclass extends/implements dari SUPERclassnya milik SUPERclass.
 
 - [x] **Cyclic Hierarchy**
+      
    Semua SUBclass harus bergantung pada SUPERclass – bukan sebaliknya. Jika terbalik, bawa penulis code ke RSJ.
 
 ㅤ
