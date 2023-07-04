@@ -90,8 +90,7 @@ Version control adalah gabungan dari sesuatu yang lu lakuin, dengan alat yang me
 
 Aplikasi version control yang terkenal adalah Git uuntuk lokal, dan GitHub yang di-host pada cloud.
 
-Pada aplikasi version control, ada yang namanya **Change Set**. Yang disimpan pada sebuah **Change Set** adalah semua perubahan pada file yang di-*track*
-.
+Pada aplikasi version control, ada yang namanya **Change Set**. Yang disimpan pada sebuah **Change Set** adalah semua perubahan pada file yang di-*track*.
 
 Ketika suatu perubahan ingin kita simpan supaya dapat dilihat kembali, aplikasi umumnya akan memberikan kemudahan untuk kita dengan menamai commit kita.
 
