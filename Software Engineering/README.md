@@ -96,26 +96,26 @@ Ketika suatu perubahan ingin kita simpan supaya dapat dilihat kembali, aplikasi 
 
 \
 Version control system terdapat 2 tipe:
+1. **Centralized Version Control System**
 
-#### Centralized Version Control System
+   semua perubahan perlu dikomunikasikan dengan suatu entity central yang mendata semua perubahan.
 
-semua perubahan perlu dikomunikasikan dengan suatu entity central yang mendata semua perubahan.
+   Ini kaku, developer akan susah bekerja sama dengan leluasa.
 
-Ini kaku, developer akan susah bekerja sama dengan leluasa.
 
-ㅤ
+2. **Decentralized Version Control System**
 
-#### Decentralized Version Control System
+   Ini kaya GitHub, lu clone repository ke device lu, dan lu bisa modify semua file dan commit ke repository punya lu sendiri.
 
-Ini kaya GitHub, lu clone repository ke device lu, dan lu bisa modify semua file dan commit ke repository punya lu sendiri.
-
-Ketika lu memang mau publish sebuah perubahan, lu bisa open a pull request dengan central repository.
+   Ketika lu memang mau publish sebuah perubahan, lu bisa open a pull request dengan central repository.
 
 ㅤ
 
 #### Branch Management
 
-Ini gw belom baca untuk yang centralized version control system. Tapi ya lu tau lah
+Konsep yang digunakan untuk me-refer kepada kegiatan mengurus branch.
+
+Branch management biasanya dilakukan di decentralized version control system, untuk meng-resolve conflict yang ada ketika terdapat perbedaan yang berbeda pada branch.
 
 ㅤ
 
