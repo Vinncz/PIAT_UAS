@@ -22,9 +22,9 @@ __Composed by:__
 ### I. Multiple Choices (20%)
 - [X] Software Configuration Management
 - [X] Version Control and Branch Management
-- [ ] CI/CD
-- [ ] Software Architecture
-- [ ] Deployment
+- [X] CI/CD
+- [X] Software Architecture
+- [X] Deployment
 - [ ] Maintenance and Reengineering
 
 ### II. Essay (30%)
@@ -88,7 +88,7 @@ Software Configuration Management memiliki proses sbg berikut:
 
 Version control adalah gabungan dari sesuatu yang lu lakuin, dengan alat yang membantu lu dalem menjaga riwayat dari sebuah file.
 
-Aplikasi version control yang terkenal adalah Git uuntuk lokal, dan GitHub yang di-host pada cloud.
+Aplikasi version control yang terkenal adalah Git untuk lokal, dan GitHub yang di-host pada cloud.
 
 Pada aplikasi version control, ada yang namanya **Change Set**. Yang disimpan pada sebuah **Change Set** adalah semua perubahan pada file yang di-*track*.
 
@@ -119,16 +119,49 @@ Ini gw belom baca untuk yang centralized version control system. Tapi ya lu tau 
 
 ㅤ
 
-### Continuous Improvements, Continuous Development (CI/CD)
+### Continuous Integration, Continuous Development (CI/CD)
 
-CI/CD is **a method to frequently deliver apps to customers by introducing automation into the stages of app development**. The main concepts attributed to CI/CD are continuous integration, continuous delivery, and continuous deployment.
+Continuous integration dalah sebuah konsep yang memasukkan code-yang-baru-ditulis kedalam repo, dan menguji kode itu secara cepat.
+
+Continuous deployment adalah konsep yang dilakukan SETELAH cont. integration, yang meng-compile dan me-rilis software versi baru, setelah code-nya lulus uji.
+
+Manfaatnya ada beberapa:
+- Feedback dateng lebih cepat (karena lu rilisnya cepet)
+- Bug lebih sedikit, dan terdeteksi lebih cepat (karena setiap rilis bedanya tidak banyak)
+- Mempercepat proses rilis
 
 ㅤ
 
 
 ### Software Architecture
 
-Software architecture is **the set of structures needed to reason about a software system and the discipline of creating such structures and systems**. Each structure comprises software elements, relations among them, and properties of both elements and relations.
+Software architecture adalah blueprint dari sebuah software. Ia menentukan ***component*** mana yang interaksi dengan siapa, dan mengatur organisasinya.
+
+> Component bisa dimengerti sebagai *module*, *library*, *service* atau apapun yang digunakan untuk meng-accomplish sesuatu.
+
+Anggaplah mau buat rumah. Sebelum dibuat, rumah harus sudah di-plan dulu sebelum pesen material dan eksekusi pembangunan.
+
+Setelah selesai pembangunan pun, blueprint bisa berguna untuk membantu memahami struktur dari rumah.
+
+Arsitektur ada banyak gaya:
+
+- Data-centered Style
+
+  Bayangin ada 5 toko yang saweran buat sewa suatu gudang. Gudang itu diakses terus-terusan sama kelima toko ini.
+
+  Jadi di style ini, data storage itu adalah inti dibalik arsitekturnya. Data storage akan sering diakses, dan akan melakukan banyak data modifying activity.
+
+- Call-and-return Style
+
+  Lu panggil sebuah modul dari software, ia mengembalikan data yang lu minta (API)
+
+- Layered Style
+
+  Bayangin ada beberapa level di suatu game. Semakin bertambahnya level, lu semakin deket dengan boss.
+
+  Sama dengan ini: disini, program memiliki beberapa layer: semakin dalem, semakin deket dengan data.
+
+  Ini itu MVC (Model View Controller) (inget PSD LAB). Paling atas adalah layer View (yang nampung UI .aspx). Layer tengah adalah controller (yang validasi dan mengatur logika). Layer bawah adalah database dan model (data).
 
 ㅤ
 
@@ -138,7 +171,7 @@ Software architecture is **the set of structures needed to reason about a softwa
 Deployment adalah aktivitas yang memungkinkan software utk dapat berjalan pada sebuah sistem (device-nya pengguna).
 
 Deployment biasanya di-bundle dengan aktivitas:
-1. provisionning env
+1. penyediaan env
 2. installing
 3. testing
 
@@ -313,58 +346,75 @@ Ada dua strategi dalam Risk Management:
 Terdapat 3 kata kunci yang berkaitan dengan ***Risk*** pada software engineering:
 
 1. **Mitigation**
+
    Gimana caranya menghindar dari risk?
 
 2. **Monitoring**
+
    Faktor apa yang bisa kita amati untuk bisa tau bahwa si Risk nya ini makin likely atau sebaliknya?
 
 3. **Management**
+
    Apa yang kita lakuin kalo Risknya kebeneran terjadi?
 
 ---
 
 Untuk prinsip, terdapat 7 prinsip disekitar Software Risk:
 1. Maintain a global perspective
+
    Lu kalo mau analisa sebuah Risk, liat itu dari konteks-nya sebuah sistem dan sisi bisnis
 
 2. Take a forward-looking view
+
    Pikirin juga tentang Risk yang mungkin muncul di waktu kedepan -- supaya lu siap-siap.
 
 3. Encourage open communication
+
    Kalo seseorang menaikkan topik potensi Risk, lu perhatiin
 
 4. Integrate
+
    Software process harus mencerminkan konsiderasi yang lu ambil dalam memitigasi sebuah Risk
 
 5. Emphasize a continuous process
+
    Sembari lu develop software, lu juga harus sembari pantau Risk-Risk yang udah lu indentifikasiin. Naikan treat level-nya sesuai dengan informasi yang muncul.
 
 6. Develop a shared product vision
+
    Kalo semua stakeholders memiliki visi yang sama untuk suatu software, maka bisa jadi Risk Identificationnya akan berjalan lebih baik.
 
-8. Encourage teamwork
+7. Encourage teamwork
+
    Gunakan semua available efforts agar terhindar dari perkara.
 
 ---
 
 Risk umumnya muncul disekitar:
 1. Product size
+
    Risk yang muncul akan terasosiasi dengan seberapa besar (ribet) software yang ingin dibuat.
 
 2. Business impact
+
    Risk yang muncul akan terasosiasi dengan constraint dari management ataupun keadaan pasar.
 
 3. Customer characteristics
+
    Risk yang muncul akan terasosiasi dengan customer yang menggunakan aplikasinya.
 
 4. Process definition
+
    Risk yang muncul akan terasosiasi dengan seberapa derajat lu ngikutin pre-defined guidance, pas lu buat proses dari suatu software.
 
 5. Devlopment environment
+
    Risk yang muncul akan terasosiasi dengan ketersediaan dan kualitas dari alat yang dipake dalam membuat software.
 
 6. Technology to be built
+
    Risk yang muncul akan terasosiasi dengan keterbaruan (generasi) dari teknologi yang dipakai oleh software.
 
 7. Staff size & experience
+
    Risk yang muncul akan terasosiasi dengan expertise dan jumlah orang yang dapat berkontribusi pada proses pembangunan software.
