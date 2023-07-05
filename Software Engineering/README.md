@@ -94,6 +94,7 @@ Pada aplikasi version control, ada yang namanya **Change Set**. Yang disimpan pa
 
 Ketika suatu perubahan ingin kita simpan supaya dapat dilihat kembali, aplikasi umumnya akan memberikan kemudahan untuk kita dengan menamai commit kita.
 
+\
 Version control system terdapat 2 tipe:
 
 #### Centralized Version Control System
@@ -102,11 +103,15 @@ semua perubahan perlu dikomunikasikan dengan suatu entity central yang mendata s
 
 Ini kaku, developer akan susah bekerja sama dengan leluasa.
 
+ㅤ
+
 #### Decentralized Version Control System
 
 Ini kaya GitHub, lu clone repository ke device lu, dan lu bisa modify semua file dan commit ke repository punya lu sendiri.
 
 Ketika lu memang mau publish sebuah perubahan, lu bisa open a pull request dengan central repository.
+
+ㅤ
 
 #### Branch Management
 
@@ -130,7 +135,51 @@ Software architecture is **the set of structures needed to reason about a softwa
 
 ### Deployment
 
-Software deployment is **the process of making software available to be used on a system by users and other programs**. You might deploy software to create a backup copy of the software, to move the software to another system, or to create another SMP/E-serviceable copy for installing service or other products.
+Deployment adalah aktivitas yang memungkinkan software utk dapat berjalan pada sebuah sistem (device-nya pengguna).
+
+Deployment biasanya di-bundle dengan aktivitas:
+1. provisionning env
+2. installing
+3. testing
+
+Ketika software di-deploy, ia itu sebaiknya dimonitor untuk beberapa saat (jaga-jaga kalau ada masalah)
+
+ㅤ
+
+#### Deployment Strategies
+
+* Basic Deployment
+
+  Deploy keseluruhan update diatas versi yang sekarang
+
+* Rolling Deployment
+
+  Deploy sebagian saja dari keseluruhan update
+
+* Multiservice Deployment
+
+  Pada microservices architecture, dia itu update banyak service sekaligus
+
+* Blue/Green Deployment
+
+  Jadinya terdapat 2 versi (satu old, satu new) yang working secara sekaligus
+
+* Canary Deployment
+
+  Deploy sedikit-sedikit (incremental) (BUKAN SUBSET DARI UPDATE)
+
+* Shadow Deployment
+
+  Keadaan dimana incoming request milik aplikasi lama diarahkan ke versi yang terbaru. Ini seakan-akan aplikasinya belum update, meskipun sebenarnya sudah.
+
+ㅤ
+
+#### Deployment Best Practices
+
+1. Buat cluster berbeda untuk production dan non-production
+2. Apply resource limits (kalo something gone wrong, karena resourcenya terbatas, dampaknya juga minimal)
+3. Collect deployment metrics (angka-angka analytics)
+4. Otomate database updates
 
 ㅤ
 
