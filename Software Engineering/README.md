@@ -41,7 +41,7 @@ __Composed by:__
 
 ## Multiple Choices (20%)
 
-### Software Configuration Management
+### A. Software Configuration Management
 
 Merupakan hal yang lu lakuin untuk menata dan mengontrol konfigurasi dari sebuah software.
 
@@ -84,7 +84,7 @@ Software Configuration Management memiliki proses sbg berikut:
 ㅤ
 
 
-### Version Control and Branch Management
+### B. Version Control and Branch Management
 
 Version control adalah gabungan dari sesuatu yang lu lakuin, dengan alat yang membantu lu dalem menjaga riwayat dari sebuah file.
 
@@ -119,7 +119,7 @@ Branch management biasanya dilakukan di decentralized version control system, un
 
 ㅤ
 
-### Continuous Integration, Continuous Development (CI/CD)
+### C. Continuous Integration, Continuous Development (CI/CD)
 
 Continuous integration dalah sebuah konsep yang memasukkan code-yang-baru-ditulis kedalam repo, dan menguji kode itu secara cepat.
 
@@ -133,7 +133,7 @@ Manfaatnya ada beberapa:
 ㅤ
 
 
-### Software Architecture
+### D. Software Architecture
 
 Software architecture adalah blueprint dari sebuah software. Ia menentukan ***component*** mana yang interaksi dengan siapa, dan mengatur organisasinya.
 
@@ -166,7 +166,7 @@ Arsitektur ada banyak gaya:
 ㅤ
 
 
-### Deployment
+### E. Deployment
 
 Deployment adalah aktivitas yang memungkinkan software utk dapat berjalan pada sebuah sistem (device-nya pengguna).
 
@@ -217,7 +217,7 @@ Ketika software di-deploy, ia itu sebaiknya dimonitor untuk beberapa saat (jaga-
 ㅤ
 
 
-### Maintenance and Reengineering
+### F. Maintenance and Reengineering
 
 Maintenance and reengineering are **two different areas in software engineering**. Maintenance is for running the system till the age of the system where as the reengineering make the system new to work for another life span. Scope of reengineering is vast and challenging as compared to maintenance.
 
@@ -228,7 +228,7 @@ Maintenance and reengineering are **two different areas in software engineering*
 ㅤ
 ## Essay (30%)
 
-### Emerging Trends in Software Engineering
+### A. Emerging Trends in Software Engineering
 
 Tiga pertanyaan pada emerging trends:
 1. Seberapa cepat teknologi bisa berkembang?
@@ -266,7 +266,7 @@ Software engineering pada umumnya ingin perubahan untuk datang secara jarang-jar
 ㅤ
 
 
-### Security Engineering
+### B. Security Engineering
 
 Kunci penting dari keamanan sebuah aplikasi adalah: **menjaga mereka yang tidak memiliki kepentingan dari mengakses sebuah informasi**.
 
@@ -296,14 +296,14 @@ Security Engineering memiliki 6 tahap:
 ㅤ
 ## Case (50%)
 
-### Software Architecture
+### A. Software Architecture
 
 What the fu-
 
 ㅤ
 
 
-### Risk Management
+### B. Risk Management
 
 ![risk management paradigm](https://i.ibb.co/GJmBYQ7/Screenshot-2023-06-26-194331.jpg)
 
