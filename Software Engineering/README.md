@@ -100,7 +100,7 @@ Version control system terdapat 2 tipe:
 
    semua perubahan perlu dikomunikasikan dengan suatu entity central yang mendata semua perubahan.
 
-   Ini kaku, developer akan susah bekerja sama dengan leluasa.
+   Ini kaku, developer akan susah bekerja sama.
 
 
 2. **Decentralized Version Control System**
@@ -187,7 +187,7 @@ Ketika software di-deploy, ia itu sebaiknya dimonitor untuk beberapa saat (jaga-
 
 * Rolling Deployment
 
-  Deploy sebagian saja dari keseluruhan update
+  Deploy sebagian aplikasi aja
 
 * Multiservice Deployment
 
@@ -199,7 +199,7 @@ Ketika software di-deploy, ia itu sebaiknya dimonitor untuk beberapa saat (jaga-
 
 * Canary Deployment
 
-  Deploy sedikit-sedikit (incremental) (BUKAN SUBSET DARI UPDATE)
+  Deploy bertahap (incremental)
 
 * Shadow Deployment
 
