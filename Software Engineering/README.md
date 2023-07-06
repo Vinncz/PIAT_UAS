@@ -1,4 +1,5 @@
 
+
 ㅤ
 # [PIAT] Personal Intensive Acceleration Training
 
@@ -12,7 +13,7 @@ __Made for:__
 
 __Composed by:__
 > 2501977941 - Kevin Gunawan
->
+> 
 > ChatGPT (Best Boi)
 
 ㅤ
@@ -25,7 +26,7 @@ __Composed by:__
 - [X] CI/CD
 - [X] Software Architecture
 - [X] Deployment
-- [ ] Maintenance and Reengineering
+- [X] Maintenance and Reengineering
 
 ### II. Essay (30%)
 - [X] Emerging Trends in Software Engineering
@@ -43,28 +44,28 @@ __Composed by:__
 
 ### A. Software Configuration Management
 
-Merupakan hal yang lu lakuin untuk menata dan mengontrol konfigurasi dari sebuah software.
+Merupakan **hal yang lu lakuin** untuk menata dan mengontrol konfigurasi dari sebuah software.
 
-SCM mencakup:
-- Version Control
+**SCM mencakup:**
+- **Version Control**
 
   Helps in maintaining a history of changes, facilitates collaboration among team members, and enables reverting to previous versions if necessary.
 
-- Change Management
+- **Change Management**
 
   Provides mechanisms to track, review, approve, and implement changes in a controlled manner. This includes the ability to create change requests, assign them to appropriate individuals, and track their status throughout the change lifecycle.
 
-- Release Management
+- **Release Management**
 
   Ensures that the correct versions of software artifacts are utilized during the build and release processes.
 
-Software Configuration Management memiliki beberapa elemen:
+**Software Configuration Management memiliki beberapa elemen**:
 - Component elements:
 - Process elements:
 - Construction elements:
 - Human elements:
 
-Software Configuration Management memiliki proses sbg berikut:
+**Software Configuration Management memiliki proses sbg berikut**:
 1. User sadar kalo perlu ada perubahan/perkembangan
 2. User kirim request ke developer untuk perubahan
 3. Developer evaluasi, dan membuat report ttg apa yang terjadi
@@ -88,7 +89,7 @@ Software Configuration Management memiliki proses sbg berikut:
 
 Version control adalah gabungan dari sesuatu yang lu lakuin, dengan alat yang membantu lu dalem menjaga riwayat dari sebuah file.
 
-Aplikasi version control yang terkenal adalah Git untuk lokal, dan GitHub yang di-host pada cloud.
+Aplikasi version control yang terkenal adalah **Git** untuk lokal, dan **GitHub** yang di-host pada cloud.
 
 Pada aplikasi version control, ada yang namanya **Change Set**. Yang disimpan pada sebuah **Change Set** adalah semua perubahan pada file yang di-*track*.
 
@@ -98,9 +99,11 @@ Ketika suatu perubahan ingin kita simpan supaya dapat dilihat kembali, aplikasi 
 Version control system terdapat 2 tipe:
 1. **Centralized Version Control System**
 
-   semua perubahan perlu dikomunikasikan dengan suatu entity central yang mendata semua perubahan.
+   Tidak ada yang namanya **clone**/**commit locally**: kalau mau modify sebuah code, PULL semua dari server, dan setelah diganti, PUSH & MERGE ke server.
 
-   Ini kaku, developer akan susah bekerja sama.
+   Ini kaku, developer akan susah kerjasama.
+
+   Contoh dari CVC adalah **Perforce**, dan **Subversion**.
 
 
 2. **Decentralized Version Control System**
@@ -125,7 +128,7 @@ Continuous integration dalah sebuah konsep yang memasukkan code-yang-baru-dituli
 
 Continuous deployment adalah konsep yang dilakukan SETELAH cont. integration, yang meng-compile dan me-rilis software versi baru, setelah code-nya lulus uji.
 
-Manfaatnya ada beberapa:
+**Manfaatnya ada beberapa:**
 - Feedback dateng lebih cepat (karena lu rilisnya cepet)
 - Bug lebih sedikit, dan terdeteksi lebih cepat (karena setiap rilis bedanya tidak banyak)
 - Mempercepat proses rilis
@@ -143,19 +146,19 @@ Anggaplah mau buat rumah. Sebelum dibuat, rumah harus sudah di-plan dulu sebelum
 
 Setelah selesai pembangunan pun, blueprint bisa berguna untuk membantu memahami struktur dari rumah.
 
-Arsitektur ada banyak gaya:
+**Arsitektur ada banyak gaya:**
 
-- Data-centered Style
+- **Data-centered Style**
 
   Bayangin ada 5 toko yang saweran buat sewa suatu gudang. Gudang itu diakses terus-terusan sama kelima toko ini.
 
   Jadi di style ini, data storage itu adalah inti dibalik arsitekturnya. Data storage akan sering diakses, dan akan melakukan banyak data modifying activity.
 
-- Call-and-return Style
+- **Call-and-return Style**
 
   Lu panggil sebuah modul dari software, ia mengembalikan data yang lu minta (API)
 
-- Layered Style
+- **Layered Style**
 
   Bayangin ada beberapa level di suatu game. Semakin bertambahnya level, lu semakin deket dengan boss.
 
@@ -163,6 +166,8 @@ Arsitektur ada banyak gaya:
 
   Ini itu MVC (Model View Controller) (inget PSD LAB). Paling atas adalah layer View (yang nampung UI .aspx). Layer tengah adalah controller (yang validasi dan mengatur logika). Layer bawah adalah database dan model (data).
 
+- **Service-Oriented Architecture (SOA)**
+  SOA is an architectural approach that involves designing software as a collection of services that communicate through well-defined interfaces. It promotes loose coupling and reusability.
 ㅤ
 
 
@@ -170,7 +175,7 @@ Arsitektur ada banyak gaya:
 
 Deployment adalah aktivitas yang memungkinkan software utk dapat berjalan pada sebuah sistem (device-nya pengguna).
 
-Deployment biasanya di-bundle dengan aktivitas:
+**Deployment biasanya di-bundle dengan aktivitas:**
 1. penyediaan env
 2. installing
 3. testing
@@ -181,27 +186,27 @@ Ketika software di-deploy, ia itu sebaiknya dimonitor untuk beberapa saat (jaga-
 
 #### Deployment Strategies
 
-* Basic Deployment
+* **Basic Deployment**
 
-  Deploy keseluruhan update diatas versi yang sekarang
+  Update semua instance (module) dari versi yang sekarang
 
-* Rolling Deployment
+* **Rolling Deployment**
 
-  Deploy sebagian aplikasi aja
+  Update sebagian instance saja
 
-* Multiservice Deployment
+* **Multiservice Deployment**
 
-  Pada microservices architecture, dia itu update banyak service sekaligus
+  Update banyak service sekaligus
 
-* Blue/Green Deployment
+* **Blue/Green Deployment**
 
-  Jadinya terdapat 2 versi (satu old, satu new) yang working secara sekaligus
+  Buat 2 versi (satu old, satu new) working secara sekaligus
 
-* Canary Deployment
+* **Canary Deployment**
 
-  Deploy bertahap (incremental)
+  Deploy incrementally
 
-* Shadow Deployment
+* **Shadow Deployment**
 
   Keadaan dimana incoming request milik aplikasi lama diarahkan ke versi yang terbaru. Ini seakan-akan aplikasinya belum update, meskipun sebenarnya sudah.
 
@@ -237,27 +242,35 @@ Tiga pertanyaan pada emerging trends:
 
 #### Soft Trends yang Telah Diamati
 
-1. Connectivity and Collaboration
+1. **Connectivity and Collaboration**
 
    Ini telah membuat proses kolaborasi saat perancangan software bisa dilakukan dari jarak jauh.
 
-2. Globalization
+2. **Globalization**
 
    Anggota tim bisa berasal darimana saja, dengan ekspertise yang berbeda-beda. Untuk software dapat berhasil, si developer sebagai tim harus dapat berhasil dalam meng-harness potensial penuh dari tim-nya.
+
+ㅤ
 
 #### Open-World Software
 
 Merupakan software yang didesign untuk terus beradaptasi dengan environment yang terus berganti.
 
+Open-world software ada, sebab border dari **software-yang-dibuat** dengan **real-world** tidak bisa dibatasi.
+
+ㅤ
+
 #### Open Source Software
 
 Merupakan software yang source-code nya tersedia secara public.
 
-Open Source merupakan methodology yang mengizinkan **siapa saja** untuk berkontribusi, sehingga dapat menghasilkan product yang berkualitas dan reliable (akibat expertise orang-orang)
+Open Source merupakan methodology yang mengizinkan **siapa saja** untuk berkontribusi, sehingga dapat menghasilkan product yang berkualitas dan reliable (akibat expertise orang-orang).
+
+ㅤ
 
 #### Technology Direction
 
-Software engineering is about people dan kebisaan mereka untuk saling mengkomunikasikan kebutuhan mereka, dan berinovasi sehingga kebutuhan mereka itu bisa terpenuhi.
+Software engineering is about people dan kemampuan mereka untuk saling mengkomunikasikan kebutuhan mereka, dan berinovasi sehingga kebutuhan mereka itu bisa terpenuhi.
 
 Setiap kali ada unsur orang, maka sudah pasti akan ada perubahan.
 
@@ -283,12 +296,12 @@ Urutan flownya **secara UMUM** adalah sebagai berikut:
 4. Jika sudah terlanjur jebol, cari cara untuk memitigasi future breach.
 
 Security Engineering memiliki 6 tahap:
-1. Identify asset" yang dimiliki software, supaya lu bisa analisa nantinya
-2. Buatlah architecture overview supaya ngerti hubungan dari software dengan asset"nya
-3. Decompose the application agar lu punya clue "dimana Risk mungkin sembunyi"
-4. Mulailah cari threat-threat yang ada.
-5. Dokumentasikan threat yang lu temuin
-6. Klasifikasi threat-nya. Yang klasifikasinya berat, lu harus selesaiin secepetnya.
+1. **Identify asset-assets yang dimiliki software**, supaya lu bisa analisa nantinya
+2. **Buat architecture overview** supaya ngerti hubungan dari software dengan asset"nya
+3. **Decompose the application** agar lu punya clue "dimana Risk mungkin sembunyi"
+4. **Indentifikasi threats** yang ada.
+5. **Dokumentasiin threat** yang lu temuin
+6. **Klasifikasi threat**-nya. Yang klasifikasinya berat, lu harus selesaiin secepetnya.
 ㅤ
 
 ㅤ
@@ -305,7 +318,10 @@ What the fu-
 
 ### B. Risk Management
 
+Kalo skornya makin kecil, artinya tambah parah.
+
 ![risk management paradigm](https://i.ibb.co/GJmBYQ7/Screenshot-2023-06-26-194331.jpg)
+idenalplantracon (ciapt)
 
 Didalam sebuah risk management, semua dimulai dari:
 1. **Mengidentifikasi Risk yang ada**,
@@ -328,12 +344,28 @@ Ketika Risk itu benar-benar terjadi, kita
 
 ---
 
+Risk memiliki beberapa komponen: (Cos Spt Perf Sce)
+
+1. **Performance risk**
+   Menandakan seberapa banyaknya kemungkinan si product bisa mencapai tujuan performanya.
+
+2. **Cost risk**
+   Menandakan seberapa banyaknya kemungkinan bahwa budget utk si product bisa cukup.
+
+3. **Support risk**
+   Menandakan seberapa banyaknya kemungkinan bahwa product akan bisa dengan mudah/tidaknya di-support.
+
+4. **Schedule risk**
+   Menandakan seberapa banyaknya kemungkinan kalau project bisa kelar dalam jadwal yang ditentukan.
+
+---
+
 Ada dua strategi dalam Risk Management:
 
 **I. Reactive Management**
 
 - Dilakuin setelah sebuah risk muncul.
-- Resources baru akan dialokasi SETELAH perkara terjadi
+- Resources baru akan dialokasi **SETELAH** perkara terjadi
 
 **II. Proactive Management**
 
@@ -360,61 +392,63 @@ Terdapat 3 kata kunci yang berkaitan dengan ***Risk*** pada software engineering
 ---
 
 Untuk prinsip, terdapat 7 prinsip disekitar Software Risk:
-1. Maintain a global perspective
+
+1. **Maintain a global perspective**
 
    Lu kalo mau analisa sebuah Risk, liat itu dari konteks-nya sebuah sistem dan sisi bisnis
 
-2. Take a forward-looking view
+2. **Take a forward-looking view**
 
    Pikirin juga tentang Risk yang mungkin muncul di waktu kedepan -- supaya lu siap-siap.
 
-3. Encourage open communication
+3. **Encourage open communication**
 
    Kalo seseorang menaikkan topik potensi Risk, lu perhatiin
 
-4. Integrate
+4. **Integrate**
 
    Software process harus mencerminkan konsiderasi yang lu ambil dalam memitigasi sebuah Risk
 
-5. Emphasize a continuous process
+5. **Emphasize a continuous process**
 
    Sembari lu develop software, lu juga harus sembari pantau Risk-Risk yang udah lu indentifikasiin. Naikan treat level-nya sesuai dengan informasi yang muncul.
 
-6. Develop a shared product vision
+6. **Develop a shared product vision**
 
    Kalo semua stakeholders memiliki visi yang sama untuk suatu software, maka bisa jadi Risk Identificationnya akan berjalan lebih baik.
 
-7. Encourage teamwork
+7. **Encourage teamwork**
 
    Gunakan semua available efforts agar terhindar dari perkara.
 
 ---
 
 Risk umumnya muncul disekitar:
-1. Product size
+
+1. **Product size (PS)**
 
    Risk yang muncul akan terasosiasi dengan seberapa besar (ribet) software yang ingin dibuat.
 
-2. Business impact
+2. **Business impact (BU)**
 
    Risk yang muncul akan terasosiasi dengan constraint dari management ataupun keadaan pasar.
 
-3. Customer characteristics
+3. **Customer characteristics (CU)**
 
    Risk yang muncul akan terasosiasi dengan customer yang menggunakan aplikasinya.
 
-4. Process definition
+4. **Process definition (PD)**
 
    Risk yang muncul akan terasosiasi dengan seberapa derajat lu ngikutin pre-defined guidance, pas lu buat proses dari suatu software.
 
-5. Devlopment environment
+5. **Devlopment environment (DE)**
 
    Risk yang muncul akan terasosiasi dengan ketersediaan dan kualitas dari alat yang dipake dalam membuat software.
 
-6. Technology to be built
+6. **Technology to be built (TE)**
 
    Risk yang muncul akan terasosiasi dengan keterbaruan (generasi) dari teknologi yang dipakai oleh software.
 
-7. Staff size & experience
+7. **Staff size & experience (ST)**
 
    Risk yang muncul akan terasosiasi dengan expertise dan jumlah orang yang dapat berkontribusi pada proses pembangunan software.
