@@ -146,17 +146,16 @@ Jika class yang mau kita factory-kan hanya memiliki satu varian, maka lebih baik
 
 **Contoh:**
 
-Terdapat tiga pilihan burger yang dapat dipesan oleh orang-orang umum:
+Sebuah restoran menjual 2 macam makanan paketan:
 
-(1) **Chicken Cheese Burger:** terdiri dari `Keju`, `Daging ayam`, dan `Roti`
-(2) **Beef Rasher Burger:** terdiri dari `Saus sweet ranch`, `Daging rasher sapi`, dan `Roti`
-(3) **Krabby Patty Burger:** terdiri dari `Lettuce`, `Daging patty`, dan `Roti`
+(1) **Paket Hemat A** terdiri dari `Burger` dan `Coca Cola`
 
-Untuk menggunakan abstract factory pattern:
-1. Pastikan bahwa perbedaan yang ada diantara **varian** dari class `Burger` adalah attribute-nya.
-2. Superclass yang varian-varian tersebut inherits, harus sudah ada dulu.
+(2) **Paket Hemat B** terdiri dari `Pizza` dan `Pepsi`
+\
+\
+`Paket Hemat A` dan `Paket Hemat B` disini adalah factory, yang membuatkan suatu "paket" dari class `McDonkey`.
 
-[class diagram]
+![abstract factory](https://i.ibb.co/gmsgpQQ/image.png)
 
 ㅤ
 
