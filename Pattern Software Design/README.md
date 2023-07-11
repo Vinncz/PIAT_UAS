@@ -250,4 +250,4 @@ Method `AdjustAvailability()` akan menerima Event yang dikirim, lalu menambahkan
 
 ## Case Study
 
-Next Update.
+Next update gw tambahin.
