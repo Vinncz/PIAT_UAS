@@ -49,8 +49,9 @@ Dibawah akan dibahas secara mendetail semua yang dimention sebelumnya.
 
 Merupakan class yang attributnya dapat berganti (mutable).
 Entity biasanya ditandakan dengan memiliki ID pada attribute-nya.
-\
+
 ㅤ
+
 **Class diagram:**
 
 ![Entity example](https://i.ibb.co/0tWv8Ws/image.png)
