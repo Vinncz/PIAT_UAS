@@ -149,8 +149,11 @@ Jika class yang mau kita factory-kan hanya memiliki satu varian, maka lebih baik
 Terdapat 4 tipe dari ranjang yang ada di hotel:
 
 (1) Single yang cukup untuk satu orang dengan satu buah ranjang
+
 (2) Double yang cukup untuk dua orang dengan satu buah ranjang besar
+
 (3) Twin yang cukup untuk dua orang dengan dua buah ranjang terpisah
+
 (4) Quad yang cukup untuk empat orang dengan empat ranjang terpisah
 
 
