@@ -82,6 +82,7 @@ Jawabannya adalah tidak. Karena attribut **HEX** yang adalah **#9747FF** menentu
 ---
 
 **Class diagram:**
+
 ![value object example](https://i.ibb.co/ch1vLBP/image.png)
 
 ㅤ
@@ -95,6 +96,7 @@ Class ini biasanya ada untuk ***memenuhi logic dari sebuah business***.
 ㅤ
 
 **Class diagram:**
+
 ![Domain Service Example](https://i.ibb.co/YTKKtqm/image.png)
 
 ㅤ
@@ -112,6 +114,7 @@ Tujuan dari ***root*** adalah sebagai gatekeeper, yang menentukan semua asosiasi
 Kalau digambarkan pada `class diagram`, aggregates dapat terlihat sebagai garis yang ngelilingi sekumpulan class.
 
 **Contoh:**
+
 ![Aggregate Example](https://i.ibb.co/8K7F8rC/image.png)
 
 ㅤ
@@ -196,6 +199,7 @@ Repo ***tidak menampung data***. Kalau adapun, itu biasanya ***related dengan fu
 - etc.
 
 **Contoh:**
+
 ![Repository Example](https://i.ibb.co/9njY0hg/image.png)
 
 ㅤ
