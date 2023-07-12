@@ -35,8 +35,8 @@ Diartikan sebagai ***pencurian intelectual*** atau (meng-claim/menggunakan ulang
 - Mengambil ide orang lain
 - Mengambil kata-kata orang lain
 - Mengambil gambar orang lain
-- Duplicate publication
-- Self-plagiarism
+- Duplicate publication (dari punya orang lain)
+- Self-plagiarism (dari punya sendiri)
 
 ## Paraphrase
 
@@ -61,3 +61,8 @@ Jika ditolak, cari jurnal lain :v
 **Tujuan**:
 -  Membantu editor memutuskan manuskrip mana yang diterima dan mana yang ditolak.
 - Memberikan saran bagi penulis mengenai apa yang perlu diperbaiki dari paper
+
+**CONS**:
+- Makan waktu yang lama dengan proses yang berbelit-belit
+- Makan biaya mahal buat minta si expert "review" sebuah paper
+- Tidak ada buktinya kalo proses Peer Review ini menyaring paper yang 1.) tidak memiliki novelty, 2.) penuh plagiasi, dan 3.) sudah pernah submit sebelumnya.
